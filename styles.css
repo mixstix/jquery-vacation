@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box; 
+}
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+    padding: 3em;
+    height: 30em; 
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 2% 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+/*  GRID OF THREE   ============================================================================= */
+
+	
+.span_3_of_3 {
+	width: 100%; 
+}
+
+.span_2_of_3 {
+	width: 66.13%; 
+}
+
+.span_1_of_3 {
+	width: 28%; 
+    height: 80%; 
+
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_3_of_3 {
+		width: 100%; 
+	}
+	.span_2_of_3 {
+		width: 100%; 
+	}
+	.span_1_of_3 {
+		width: 100%;
+        
+	}
+}
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 8% 0%;
+	}
+}
+
+
+
+/* STYLES FOR COLUMN*/
+
+div {
+    display: block; 
+
+}
+
+
+
+.col {
+    /*background: rgba(173,173,173,0.4);*/
+    background: rgba(20,20,20,0.5); 
+    padding: 2em 2em; 
+    display: block; 
+    float: left; 
+    position: relative; 
+
+}
+
+/* STYLES FOR THE REST OF THE PAGE */
+
+body {
+    background: url('shattered.gif');
+}
+    
+
+.titles {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    padding-left: 3em; 
+    padding-top: 3em; 
+    width: 26em; 
+}
+
+.header {
+    font-size: 2.2em; 
+    font-weight: 600; 
+}
+
+.subtitle {
+    font-style: italic;
+    font-weight: 600; 
+    font-size: 1.2em; 
+    margin-bottom: 1.5em; 
+    
+}
+
+.vacation-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #bababa; 
+    font-size: 1.7em; 
+    font-weight: 600; 
+    padding-bottom: 1.8em; 
+    height: 30%;
+    
+}
+
+.comments {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50%;
+}
+
+
+.comments-title, .comments-speech {
+    padding-bottom: 5%; 
+    
+}
+
+.comments-title {
+    color: white; 
+}
+
+.comments-speech {
+    color: #bababa;
+    font-style: oblique
+}
+
+
+.get-price {
+    border: none; 
+    outline: none;
+    margin: 0 auto;
+    width: 80%; 
+    font-size: 1.2em; 
+    background-color: #dc003e; 
+    color: white; 
+    padding: 0.4em; 
+    vertical-align: middle;
+    display: block;
+}
+
+.get-price:hover {
+    background-color: #be0237;
+    cursor: pointer;
+}
+
+.price {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+    font-size: 1.2em; 
+    font-weight: 600; 
+    text-align: center; 
+    margin-top: 5%; 
+    margin: 0 auto;
+    width: 80%;
+    border: solid #dc003e 3px; 
+    padding: 0.4em; 
+}
+
+#filters {
+    float: right; 
+    margin-right: 12%; 
+    background: rgba(173,173,173,0.4);
+    width: 20em; 
+    text-align: center; 
+    padding: 0.7em 0; 
+}
+
+.onsale-filter, .expiring-filter {
+    border: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em; 
+    padding: 0.5em; 
+    font-weight: 600; 
+    width: 45%; 
+    margin: 0 1%; 
+    
+}
+
+.onsale-filter:hover, .expiring-filter:hover {
+    cursor: pointer; 
+    background-color: #949494; 
+}
+
+.onsale-filter:focus, .expiring-filter:focus {
+    outline: none; 
+}
+    
+.highlighted {
+    /*background: rgba(20,20,20,0.4);*/
+    background: rgba(173,173,173,0.4);
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+    
