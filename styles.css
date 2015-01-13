@@ -79,6 +79,22 @@
 
 
 
+/* media query for iphone5*/
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : portrait) { 
+    .col { 
+		margin: 1% 0 8% 0%;
+	}
+    
+    .span_1_of_3 {
+		width: 100%;
+        
+	}
+}
+
 /* STYLES FOR COLUMN*/
 
 div {
