@@ -102,8 +102,8 @@ and (orientation : portrait) {
     }
     
     .span_1_of_3 {
-		width: 80%;
-        height: 27%; 
+		width: 95%;
+        height: 30%; 
         
 	}
     
@@ -112,7 +112,7 @@ and (orientation : portrait) {
     }
     
     .col {
-        font-size: 200%; 
+        font-size: 250%; 
         margin-bottom: 5%; 
     }
     
@@ -125,7 +125,7 @@ and (orientation : portrait) {
     }
     
     #filters {
-        font-size: 200%; 
+        font-size: 240%; 
         width: 100%; 
         margin: 0 auto; 
     }
