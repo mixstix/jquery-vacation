@@ -55,7 +55,7 @@
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 	.span_3_of_3 {
 		width: 100%; 
 	}
@@ -66,40 +66,72 @@
 		width: 100%;
         
 	}
+    
+    .col:first-child {
+        margin-left: 2%; 
+    }
+    
+    .col {
+        margin-bottom: 5%; 
+    }
 }
 
-
-/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS 
 
 @media only screen and (max-width: 480px) {
 	.col { 
 		margin: 1% 0 8% 0%;
 	}
-}
+} */
+
+
+/* ===iPhone 5 media query=== */
 
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
+/*and (min-device-width : 320px) */
+and (max-device-width : 320px) 
 and (orientation : portrait) { 
-    col { 
-		margin: 1% 0 8% 0%;
-	}
+    /*col { 
+		margin: 5% 1% 5% 1%;
+	}*/
+
+    .section {
+        width: 60em;
+        height: 150em; 
+        margin: 0 auto; 
+    }
     
     .span_1_of_3 {
-		width: 70%;
+		width: 80%;
+        height: 27%; 
         
 	}
+    
+    .col:first-child {
+        margin-left: 1.5%; 
+    }
+    
+    .col {
+        font-size: 200%; 
+        margin-bottom: 5%; 
+    }
     
     .get-price {
         width: 35%
     }
     
-    .vacation-title {
-        font-size: 30%; 
+    .titles {
+        font-size: 200%;
     }
     
+    #filters {
+        font-size: 200%; 
+        width: 100%; 
+        margin: 0 auto; 
+    }
 }
 
+*/
 
 /* STYLES FOR COLUMN*/
 
@@ -115,8 +147,7 @@ div {
     background: rgba(20,20,20,0.5); 
     padding: 2em 2em; 
     display: block; 
-    float: left; 
-    position: relative; 
+
 
 }
 
